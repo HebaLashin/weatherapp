@@ -64,7 +64,7 @@ class ListviewMenu extends GetView<HomeController> {
                    margin: EdgeInsets.symmetric(horizontal: 30,vertical: 30),
                    child: ElevatedButton(
                      onPressed: () {},
-                     child: Text('Button'),
+                     child: Text('Manage Locations'),
                      style: ElevatedButton.styleFrom(primary : Colors.black12,shape: StadiumBorder()),
                    )
                ),
