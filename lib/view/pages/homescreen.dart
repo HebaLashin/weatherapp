@@ -45,15 +45,17 @@ class HomeScreen extends GetView<HomeController> {
                                     icon: Icon(
                                       Icons.menu,
                                       color: Colors.white,
+
                                     ),
                                     onPressed: () {
-                                      ListviewMenu();
+                                       ListviewMenu();
                                     },
                                   ),
                                 ),),
 
                               Container(
-                                padding: EdgeInsets.only(
+
+                                margin: EdgeInsets.only(
                                     top: 40, left: 20, right: 20),
                                 child: TextField(
                                   onChanged: (value) => controller.city = value,
@@ -97,9 +99,14 @@ class HomeScreen extends GetView<HomeController> {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
                                     Container(
+                                      margin: EdgeInsets.only(top: 30),
+
                                       child: Column(
+
                                         children: [
                                           Container(
+
+
                                             child: Center(
                                               child: Text(
                                                 '${(controller
@@ -189,7 +196,9 @@ class HomeScreen extends GetView<HomeController> {
 
                                     Container(
                                       child: Container(
-                                    child:Image.asset('assets/images/sun.png', width:60,height: 60,),
+                                        margin: EdgeInsets.only(top: 30),
+
+                                        child:Image.asset('assets/images/sun.png', width:60,height: 60,),
 
                                       ),),
 
@@ -281,7 +290,7 @@ class HomeScreen extends GetView<HomeController> {
                     Expanded(
                   flex: 1,
                   child: Container(
-                      padding: EdgeInsets.only(top: 30,left: 20, right: 20),
+                      padding: EdgeInsets.only(left: 20, right: 20),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[

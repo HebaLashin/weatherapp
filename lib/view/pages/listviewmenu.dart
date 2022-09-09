@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get_state_manager/src/simple/get_view.dart';
+import 'package:untitled/view/pages/settings.dart';
 
 import '../../controller/homecontroller.dart';
 
@@ -21,7 +22,11 @@ class ListviewMenu extends GetView<HomeController> {
                  ),
                  title: const Text(' '),
                  onTap: () {
-                   Navigator.pop(context);
+                  // Navigator.pop(context);
+                     Navigator.push(
+                       context,
+                       MaterialPageRoute(builder: (context) => Settings()),
+                     );
                  },
                ),
 
